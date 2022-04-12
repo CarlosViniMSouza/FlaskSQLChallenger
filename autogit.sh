@@ -1,4 +1,4 @@
 git add .
-git commit -m "templates -> ok"
+git commit -m "backend -> ok"
 git push
 git status
