@@ -1,3 +1,3 @@
 ## Challenger Code with Python, Flask and SQL (+ MongoDB)
 
-![challenger](Docs/Backend_Test.pdf)
+![challenger](https://github.com/CarlosViniMSouza/FlaskSQLChallenger/blob/main/Docs/Backend_Test.pdf)
