@@ -1,4 +1,4 @@
 git add .
-git commit -m "backend -> errors fixed (part1)"
+git commit -m "rebuilt app"
 git push
 git status
