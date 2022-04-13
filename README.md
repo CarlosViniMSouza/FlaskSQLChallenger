@@ -44,6 +44,12 @@ wheel            0.37.1
 
 *ans.:* Set of operations that make up a task or logical unit of work to be performed (example: Creation, Deletion, etc).
 
+## Images Application
+
+![img-register](/Docs/img-register.jpg)
+
+![img-login](/Docs/img-login.jpg)
+
 ## Image from MongoDB connected to application 
 
 ![img-Mongo](/Docs/img-MongoDB-connected.jpg)

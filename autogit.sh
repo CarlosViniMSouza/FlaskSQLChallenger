@@ -1,4 +1,4 @@
 git add .
-git commit -m "PokeAPI + Pandas + MongoDB -> in progress"
+git commit -m "README -> updated"
 git push
 git status
