@@ -1,4 +1,4 @@
 git add .
-git commit -m "Tutorial Concluded! | Check problem with tests | time to charge project"
+git commit -m ".flaskenv -> add | Other Problem: Pandas with PokeAPI -> see now"
 git push
 git status
