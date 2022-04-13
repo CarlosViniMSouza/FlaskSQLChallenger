@@ -1,4 +1,4 @@
 git add .
-git commit -m "pokemonController -> ok | pokemonService -> in progress ..."
+git commit -m "challenger: show the response API in body request"
 git push
 git status

@@ -64,12 +64,12 @@ def login():
         ).fetchone()
 
         if user is None:
-            error = 'Incorrect email.'
+            error = 'Incorrect email or password.'
 
         # 'check_password_hash()' hashes the submitted password in the 
         # same way as the stored hash and securely compares them
         elif not check_password_hash(user['password'], password):
-            error = 'Incorrect password.'
+            error = 'Password error.'
 
         if error is None:
             
