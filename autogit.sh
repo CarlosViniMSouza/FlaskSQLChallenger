@@ -1,4 +1,4 @@
 git add .
-git commit -m "Next Step = Continue to Templates."
+git commit -m "Next Step = Continue to Static Files."
 git push
 git status
