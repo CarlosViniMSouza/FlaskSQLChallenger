@@ -1,4 +1,4 @@
 git add .
-git commit -m ".flaskenv -> add | Other Problem: Pandas with PokeAPI -> see now"
+git commit -m "PokeAPI + Pandas + MongoDB -> in progress"
 git push
 git status
