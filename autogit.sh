@@ -1,4 +1,4 @@
 git add .
-git commit -m "comments add in -> db.py & auth.py"
+git commit -m "comments removed in -> templates | schema.sql -> alt"
 git push
 git status

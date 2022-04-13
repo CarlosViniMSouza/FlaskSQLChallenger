@@ -101,6 +101,9 @@ def load_logged_in_user():
 @bp.route('/logout')
 def logout():
     session.clear()
+
+    # The url_for() function generates the URL 
+    # to a view based on a name and arguments.
     return redirect(url_for('index'))
 
 
