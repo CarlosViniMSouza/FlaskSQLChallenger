@@ -1,4 +1,4 @@
 git add .
-git commit -m "Next Step = Continue to Keep Developing!"
+git commit -m "Tutorial Concluded! | Check problem with tests | time to charge project"
 git push
 git status
