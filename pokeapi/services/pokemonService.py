@@ -38,27 +38,15 @@ class PokemonServices(object):
 
     def extract_essentials(self, _input):
         return {
-            "id": _input["id"],
-            "order": _input["order"],
-            "name": _input["name"],
-            "weight": _input["weight"],
-            "height": _input["height"],            
-            "color": self.find_pokemon_color(_input["id"]),
-            "base_experience": _input["base_experience"],
-            "image": self.default_image(_input["id"]),
-            "types": self.extract_types(_input),
             "abilities": self.extract_habilities(_input),
+            "base_experience": _input["base_experience"],
+            "height": _input["height"],
+            "id": _input["id"],
+            "name": _input["name"],
+            "order": _input["order"],           
+            # "color": self.find_pokemon_color(_input["id"]),
+            # "image": self.default_image(_input["id"]),
         }
-
-    def extract_types(self, _input):
-        types = _input["types"]
-        result = []
-        for item in types:
-            try:
-                result.append(self.build_type(item))
-            except Exception as e:
-                print(f"exception: {e}")
-        return result
 
     def extract_habilities(self, _input):
         abilities = _input["abilities"]
@@ -72,14 +60,14 @@ class PokemonServices(object):
         type_name = item["type"]["name"]
         return {"name": type_name, "color": self.define_color_type(type_name)}
 
+    def define_color_type(self, type_name):
+        return POKEMONS_TYPES_COLOR.get(type_name, "black")
+
     def find_pokemon_color(self, id):
         try:
             return pokeapi.pokemons_color(id)["name"]
         except Exception as e:
             return self.define_pokemon_color(id)
-
-    def define_color_type(self, type_name):
-        return POKEMONS_TYPES_COLOR.get(type_name, "black")
 
     def define_pokemon_color(self, id):
         return POKEMON_COLORS.get(id, "black")

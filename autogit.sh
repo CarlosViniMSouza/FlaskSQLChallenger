@@ -1,4 +1,4 @@
 git add .
-git commit -m "controllers & services folders -> add"
+git commit -m "pokemonController -> ok | pokemonService -> in progress ..."
 git push
 git status
