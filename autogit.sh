@@ -1,4 +1,4 @@
 git add .
-git commit -m "challenger: display pokemons only for logged in users"
+git commit -m "challenger almost finished | problems with login part"
 git push
 git status
