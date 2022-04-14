@@ -1,4 +1,4 @@
 git add .
-git commit -m "challenger almost finished | problems with login part"
+git commit -m "README updated"
 git push
 git status

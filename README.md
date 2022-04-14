@@ -46,9 +46,7 @@ wheel            0.37.1
 
 ## Images Application
 
-![img-register](/Docs/img-register.jpg)
-
-![img-login](/Docs/img-login.jpg)
+![img-pokedex](/Docs/img-pokedex.jpg)
 
 ## Image from MongoDB connected to application 
 

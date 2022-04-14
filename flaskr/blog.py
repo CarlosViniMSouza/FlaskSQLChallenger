@@ -18,5 +18,5 @@ def pokemon(pokemon_id):
   pokemon = r.json()
   return render_template('pokemon.html', pokemon=pokemon, pokemon_id=pokemon_id)
 
-if __name__ == "__main__":
+if __name__ == "__blog__":
   app.run(debug=True)
