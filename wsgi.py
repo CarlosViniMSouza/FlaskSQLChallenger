@@ -1,4 +1,4 @@
-from flaskr import blog
+from flaskr import app
 
-if __name__ == "__blog__":
-  blog.run(debug=True)
+if __name__ == "__app__":
+  app.run(debug=True)
