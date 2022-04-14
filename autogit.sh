@@ -1,4 +1,4 @@
 git add .
-git commit -m "Ok, I cant fixed the problems with login | I will end the project here"
+git commit -m "flaskenv -> alt"
 git push
 git status
