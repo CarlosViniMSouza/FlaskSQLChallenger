@@ -1,4 +1,4 @@
-# Challenger Code with Python, Flask and SQL (with MongoDB)
+## Challenger Code with Python, Flask and SQL (with MongoDB)
 
 *application build by Documentation Flask*
 
@@ -44,10 +44,22 @@ wheel            0.37.1
 
 *ans.:* Set of operations that make up a task or logical unit of work to be performed (example: Creation, Deletion, etc).
 
-## Images Application
+### Images Application
 
 ![img-pokedex](/Docs/img-pokedex.jpg)
 
-## Image from MongoDB connected to application 
+### Image from MongoDB connected to application 
 
 ![img-Mongo](/Docs/img-MongoDB-connected.jpg)
+
+## How to execute (using Git Bash):
+
+1 - install the project in your machine way: `$ git clone https://github.com/CarlosViniMSouza/FlaskSQLChallenger.git`
+
+2 - create a python virtual enviroment: `$ python -m virtualenv venv`
+
+3 - access the `venv` folder on terminal: `$ source venv/Scripts/activate`
+
+4 - execute the project: `$ flask run`
+
+5 - access the localhost: `http://127.0.0.1:5000`
