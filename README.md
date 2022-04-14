@@ -2,21 +2,19 @@
 
 *application build by Documentation Flask*
 
-```shell
-$ pip list
-Package          Version
----------------- -------
-Flask-SQLAlchemy 2.5.1
-greenlet         1.1.2
-itsdangerous     2.1.2
-Jinja2           3.1.1
-MarkupSafe       2.1.1
-pip              22.0.4
-setuptools       60.9.3
-SQLAlchemy       1.4.35
-Werkzeug         2.1.1
-wheel            0.37.1
-```
+## How to execute (using Git Bash):
+
+1 - install the project in your machine way: `$ git clone https://github.com/CarlosViniMSouza/FlaskSQLChallenger.git`
+
+2 - create a python virtual enviroment: `$ python -m virtualenv venv`
+
+3 - access the `venv` folder on terminal: `$ source venv/Scripts/activate`
+
+4 - boot the db: `$ flask init-db`
+
+5 - execute the project: `$ flask run`
+
+6 - access the localhost: `http://127.0.0.1:5000`
 
 ## Theoretical Test:
 
@@ -44,7 +42,27 @@ wheel            0.37.1
 
 *ans.:* Set of operations that make up a task or logical unit of work to be performed (example: Creation, Deletion, etc).
 
+```shell
+$ pip list
+Package          Version
+---------------- -------
+PyYAML             6.0
+requests           2.27.1
+setuptools         60.9.3
+six                1.16.0
+SQLAlchemy         1.4.35
+tomli              2.0.1
+urllib3            1.26.9
+waitress           2.1.1
+Werkzeug           2.1.1
+wheel              0.37.1
+```
+
 ### Images Application
+
+![img-register](/Docs/img-register_pg.jpg)
+
+![img-login](/Docs/img-login.jpg)
 
 ![img-pokedex](/Docs/img-pokedex.jpg)
 
@@ -52,14 +70,8 @@ wheel            0.37.1
 
 ![img-Mongo](/Docs/img-MongoDB-connected.jpg)
 
-## How to execute (using Git Bash):
+```
+PROBLEMS (FAILS):
 
-1 - install the project in your machine way: `$ git clone https://github.com/CarlosViniMSouza/FlaskSQLChallenger.git`
-
-2 - create a python virtual enviroment: `$ python -m virtualenv venv`
-
-3 - access the `venv` folder on terminal: `$ source venv/Scripts/activate`
-
-4 - execute the project: `$ flask run`
-
-5 - access the localhost: `http://127.0.0.1:5000`
+It was not possible to make the delimitations of email and password. The login flask libs were causing difficulties in meeting these requirements.
+```

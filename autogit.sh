@@ -1,4 +1,4 @@
 git add .
-git commit -m "tests folder -> +3 tests files"
+git commit -m "add dockerfile | README.md updated"
 git push
 git status
