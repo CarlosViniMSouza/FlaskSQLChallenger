@@ -1,9 +1,10 @@
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, url_for
+    Blueprint, flash, g, redirect, render_template, request, url_for, Flask
 )
 from werkzeug.exceptions import abort
-from flask_login import login_required
+from flaskr.auth import login_required
 from flaskr.db import get_db
+import requests
 
 bp = Blueprint('blog', __name__)
 
@@ -21,27 +22,18 @@ def index():
 @bp.route('/create', methods=('GET', 'POST'))
 @login_required
 def create():
-    if request.method == 'POST':
-        title = request.form['title']
-        body = request.form['body']
-        error = None
+    r = requests.get('https://pokeapi.co/api/v2/pokedex/2')
+    pokemon = r.json()
 
-        if not title:
-            error = 'Title is required.'
+    return render_template('blog/create.html', pokemon=pokemon)
 
-        if error is not None:
-            flash(error)
-        else:
-            db = get_db()
-            db.execute(
-                'INSERT INTO post (title, body, author_id)'
-                ' VALUES (?, ?, ?)',
-                (title, body, g.user['id'])
-            )
-            db.commit()
-            return redirect(url_for('blog.index'))
+@bp.route('/<pokemon_id>', methods=('GET', 'POST'))
+@login_required
+def pokemon(pokemon_id):
+    r = requests.get('https://pokeapi.co/api/v2/pokemon/{}'.format(pokemon_id))
+    pokemon = r.json()
 
-    return render_template('blog/create.html')
+    return render_template('pokemon.html', pokemon=pokemon, pokemon_id=pokemon_id)
 
 
 def get_post(id, check_author=True):

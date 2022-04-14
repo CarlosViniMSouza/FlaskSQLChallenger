@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +10,12 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <title>Flaskr Project</title>
 </head>
+
+{% block header %}
+<h1>{% block title %}Select a Pokemon{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
 
 <body>
   <div class="poke-container">
@@ -29,5 +34,4 @@
     {% endfor %}
   </div>
 </body>
-
-</html>
+{% endblock %}
