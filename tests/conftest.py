@@ -1,5 +1,5 @@
 import os, tempfile, pytest
-from .. import *
+from ..flaskr import create_app
 from flaskr.db import get_db, init_db
 
 class AuthActions(object):

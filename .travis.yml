@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.10.1"
+install:
+    - pip install -r requirements.txt
+env:
+    - DEBUG=True DATABASE_URL="sqlite://schema.sql"
+before_script:
+  - sql -c 'create database test;' -U sqlite
+script: tests conftest.py
