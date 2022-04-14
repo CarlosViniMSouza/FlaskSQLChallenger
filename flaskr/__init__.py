@@ -29,6 +29,10 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
+    @app.route('/welcome/{user}')
+    def welcome(user):
+        return f"Welcome, {user}!"
+
     db.init_app(app)
 
     app.register_blueprint(auth.bp)
