@@ -1,4 +1,4 @@
 git add .
-git commit -m "project working normally | Thinking in improvements"
+git commit -m "tests folder -> add"
 git push
 git status
